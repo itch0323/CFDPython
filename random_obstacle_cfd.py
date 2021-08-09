@@ -9,7 +9,7 @@ class calc():
         self.spx, self.epx = self.obstacle(self.nx)
         self.spy, self.epy = self.obstacle(self.ny)
         self.dx, self.dy = 2/(self.nx - 1), 2/(self.ny - 1)
-        self.nt = 100
+        self.nt = 250
         self.nit = 100
         self.rho = 1
         self.nu = .1
@@ -46,9 +46,9 @@ class calc():
             p[0, :] = p[1, :]  # dp/dy = 0 at y = 0
             
             p[self.spx, self.spy:self.epy] = p[self.spx-1, self.spy:self.epy]
-            p[self.epx, self.spy:self.epy] = p[self.epx-1, self.spy:self.epy]
+            p[self.epx, self.spy:self.epy] = p[self.epx+1, self.spy:self.epy]
             p[self.spx:self.epx, self.spy] = p[self.spx:self.epx, self.spy-1]
-            p[self.spx:self.epx, self.epy] = p[self.spx:self.epx, self.epy-1]
+            p[self.spx:self.epx, self.epy] = p[self.spx:self.epx, self.epy+1]
             p[self.spx+1:self.epx-1, self.spy+1:self.epy-1] = 0
         return p
 

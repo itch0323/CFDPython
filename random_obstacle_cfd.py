@@ -6,7 +6,8 @@ import random
 class calc():
     def __init__(self):
         self.nx, self.ny = 128, 128
-        self.spx, self.epx, self.spy, self.epy = self.obstacle(nx), self.obstacle(ny)
+        self.spx, self.epx = self.obstacle(self.nx)
+        self.spy, self.epy = self.obstacle(self.ny)
         self.dx, self.dy = 2/(self.nx - 1), 2/(self.ny - 1)
         self.nt = 100
         self.nit = 100

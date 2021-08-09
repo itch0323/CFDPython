@@ -26,7 +26,7 @@ python random_obstacle_cfd.py
 ```
 
 <br>
-![random_obstacle_cfd](random_obstacle_cfd.png)
+![random_obstacle_cfd](https://github.com/itch0323/random_obstacle_cfd/blob/master/random_obstacle_cfd.png)
 <br>
 
 ## 参考

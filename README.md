@@ -25,5 +25,6 @@ cd esrgan_for_cfd
 python random_obstacle_cfd.py
 ```
 
-## 論文
+## 参考
 <p>12 steps to Navier–Stokes<a href="https://nbviewer.jupyter.org/github/barbagroup/CFDPython/blob/master/lessons/14_Step_11.ipynb">　Step 11: Cavity Flow with Navier–Stokes</a>
+Copyright (c) Barba group 
